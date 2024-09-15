@@ -1,0 +1,876 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIKOMPARTE</name>
+    </assembly>
+    <members>
+        <member name="M:APIKOMPARTE.Controllers.AuthController.Get">
+            <summary>
+            Valida que el servicio este activo
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.AuthController.Login(ModelRequestResponse.LoginRequest)">
+            <summary>
+            Metodo para realizar el inicio de sesión
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.AuthUsuarioController.Get">
+            <summary>
+            Valida que el servicio este activo
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.AuthUsuarioController.Login(ModelRequestResponse.LoginRequest)">
+            <summary>
+            Metodo para realizar el inicio de sesión
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.create(ModelRequestResponse.CajaRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.update(ModelRequestResponse.CajaRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.CajaRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CajaController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.create(ModelRequestResponse.CategoriaRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.update(ModelRequestResponse.CategoriaRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CategoriaController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.CategoriaRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-ClienteResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>ClienteResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.Create(ModelRequestResponse.ClienteRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ClienteRequest</param>
+            <returns>ClienteResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.ClienteRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.Update(ModelRequestResponse.ClienteRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ClienteRequest</param>
+            <returns>ClienteResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.GetByFilterView(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteinterfaceController.Create(ModelRequestResponse.ClienteRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Cliente
+            </summary>
+            <param name="request">ClienteRequest</param>
+            <returns>ClienteResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ClienteinterfaceController.GetWithDni(System.String,System.String)">
+            <summary>
+            retorna los datos de una persona en base al DNI
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.Create(ModelRequestResponse.CompraDetalleRequets)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">CompraDetalleRequest</param>
+            <returns>CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.CompraDetalleRequets})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.Update(ModelRequestResponse.CompraDetalleRequets)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">CompraDetalleRequest</param>
+            <returns>CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.CompraDetalleController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List- DireccionRequest</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns> DireccionRequest</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.Create(ModelRequestResponse.DireccionRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">  DireccionRequest</param>
+            <returns> DireccionRequest</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.DireccionRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.Update(ModelRequestResponse.DireccionRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">  DireccionRequest</param>
+            <returns> DireccionRequest</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.GetByFilterView(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DireccionController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.DocumentosController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.create(ModelRequestResponse.EstadoPedidoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.update(ModelRequestResponse.EstadoPedidoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.EstadoPedidoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.EstadoPedidoRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ExportarExcelController.export">
+            <summary>
+            Retorna un archivo Excel con los productos
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-InformeEntregaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>InformeEntregaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.Create(ModelRequestResponse.InformeEntregaRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">InformeEntregaRequest</param>
+            <returns>InformeEntregaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.InformeEntregaRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.Update(ModelRequestResponse.InformeEntregaRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">InformeEntregaRequest</param>
+            <returns>InformeEntregaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.InformeEntregaController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.logindeliveryController.Get">
+            <summary>
+            Valida que el servicio este activo
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.logindeliveryController.logindelivery(ModelRequestResponse.LoginDeliveryRequest)">
+            <summary>
+            Metodo para realizar el inicio de sesión del aplicativo
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.create(ModelRequestResponse.MedioPagoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.update(ModelRequestResponse.MedioPagoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MedioPagoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.MedioPagoRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MercadoPagoController.preferencia(ModelRequestResponse.MercadoPagoRequest)">
+            <summary>
+             Metodo de mercado pago
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MercadoPagoController.estadopedido(System.Int32)">
+            <summary>
+             ver estado de pago
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MercadoPagoController.Notificacion(System.String)">
+            <summary>
+             notificaciones
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-MovimientoCajaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>MovimientoCajaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.Create(ModelRequestResponse.MovimientoCajaRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">MovimientoCajaRequest</param>
+            <returns>MovimientoCajaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.MovimientoCajaRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.Update(ModelRequestResponse.MovimientoCajaRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">MovimientoCajaRequest</param>
+            <returns>MovimientoCajaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.MovimientoCajaController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-OfertaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>OfertaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.Create(ModelRequestResponse.OfertaRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">OfertaRequest</param>
+            <returns>OfertaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.Update(ModelRequestResponse.OfertaRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">OfertaRequest</param>
+            <returns>OfertaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.GetByFilterView(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.OfertasController.export">
+            <summary>
+            Retorna un archivo Excel con los productos
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-PedidoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>PedidoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.Create(ModelRequestResponse.PedidoRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>PedidoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.PedidoRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.Update(ModelRequestResponse.PedidoRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>PedidoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.Create(ModelRequestResponse.PedidoDetallePagoRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.PedidoDetallePagoRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.Update(ModelRequestResponse.PedidoDetallePagoRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PedidoDetallePagoController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.Create(ModelRequestResponse.PersonalRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.update(ModelRequestResponse.PersonalRequest)">
+            <summary>
+            ACTUALIZAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.PersonalRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.PersonalController.export">
+            <summary>
+            Retorna un archivo Excel con la informacion
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.Create(ModelRequestResponse.ProductoRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.ProductoRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.Update(ModelRequestResponse.ProductoRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">ProductoRequest</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.ProductoController.export">
+            <summary>
+            Retorna un archivo Excel con los productos
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-SubcategoriaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>SubcategoriaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.Create(ModelRequestResponse.SubcategoriaRequest)">
+            <summary>
+            INSERTA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">SubcategoriaRequest</param>
+            <returns>SubcategoriaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.SubcategoriaRequest})">
+            <summary>
+            RETORNA LA TABLA Area EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.Update(ModelRequestResponse.SubcategoriaRequest)">
+            <summary>
+            ACTUALIZA UN REGISTRO EN LA TABLA Area
+            </summary>
+            <param name="request">SubcategoriaRequest</param>
+            <returns>SubcategoriaResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.Delete(System.Int32)">
+            <summary>
+            ELIMINA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>cantidad de registros eliminados</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.SubCategoriaController.GetByFilterView(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA VISTA DE TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.get(System.Int32)">
+            <summary>
+            TRAER POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.create(ModelRequestResponse.TipoDocumentoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.update(ModelRequestResponse.TipoDocumentoRequest)">
+            <summary>
+            INSERTAR DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.delete(System.Int32)">
+            <summary>
+            ELIMINAR POR ID
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.TipoDocumentoController.CreateMultiple(System.Collections.Generic.List{ModelRequestResponse.TipoDocumentoRequest})">
+            <summary>
+            Creacion multiple
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.UsuarioController.get">
+            <summary>
+            TRAER DATOS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.UsuarioPerfikController.create(ModelRequestResponse.UsuarioRequest)">
+            <summary>
+             inssertar datos de usuario nuevo
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.UsuarioPerfikController.buscar(ModelRequestResponse.UsuarioRequest)">
+            <summary>
+             traer el fitro de datos
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VCompraGeneralController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VCompraGeneralController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VDeliveryController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-CompraDetalleResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VDeliveryController.GetByFilter(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VistaGeneralUsuarioController.Get">
+            <summary>
+            RETORNA TODOS LOS REGISTROS DE LA TABLA Area
+            </summary>
+            <returns>List-ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VistaGeneralUsuarioController.Get(System.Int32)">
+            <summary>
+            RETORNA EL REGISTRO DE LA TABLA FILTRADO POR EL PRIMARY KEY
+            </summary>
+            <param name="id">PRIMARY KEY</param>
+            <returns>ProductoResponse</returns>
+        </member>
+        <member name="M:APIKOMPARTE.Controllers.VistaGeneralUsuarioController.GetByFilterView(ModelRequestResponse.GenericFilterRequest)">
+            <summary>
+            RETORNA LA TABLA CARGO EN BASE A PAGINACIÓN Y FIILTROS
+            </summary>
+        </member>
+        <member name="M:APIKOMPARTE.MIdleware.HelperHttpContext.getTokenClaims(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Retorna todas variables que se le asignaron a los claims al momento de generar el token
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
